@@ -1,29 +1,49 @@
 aid: barktechnologies
+
 name: Barktechnologies
+
 description: 'Barktechnologies is a technology company focused on developing innovative solutions for pet owners and veterinary services. It offers a suite of APIs that enable integration of pet health data, appointment scheduling, and product recommendations into third‑party applications. The platform aims to streamline communication between pet care providers, retailers, and pet owners, fostering better health outcomes and convenient services. While still emerging, Barktechnologies positions itself within the pet tech ecosystem, leveraging modern API standards to support developers building pet‑centric applications and services.'
+
 url: https://raw.githubusercontent.com/api-evangelist/barktechnologies/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
 - PetTech
 - APIs
 - Veterinary
 - Integration
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/barktechnologies-hosts.yml
+- type: Vendors
+  url: vendors/barktechnologies-vendors.yml
+- type: DomainSecurity
+  url: security/barktechnologies-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/barktechnologies
+
+apis: []
+
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
@@ -31,4 +51,10 @@ x-coverage:
   evidence:
     - url: https://app.barktechnologies.tech/openapi.json
       status: 200
-  checked: 2026-09-27
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
